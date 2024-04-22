@@ -33,7 +33,50 @@
         </li>
     </menu>
     </nav>
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
+
+    <div class="carousel-container">
+    <section id="image-carousel" class="splide" aria-label="goofy ahh images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="assets/images/cake1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="assets/images/cake2.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="assets/images/cake3.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Splide-->
+
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+
+    <!-- myscript-->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Splide Install-->
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+          new Splide( '#image-carousel', {
+            type: 'loop',
+            autoplay: true,
+            arrows: false,
+            pagination: false,
+            interval: 1000,
+            perPage: 2
+
+          } ).mount();
+        } );
+      </script>
+
 </body>
 </html>

@@ -73,6 +73,24 @@ button {
     display: none;
 }
 
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  #image-carousel {
+    width: 500px;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* mobile styles */
+
 @media (max-width: 580px) {
     #mobile-menu-button {
         display: block;
